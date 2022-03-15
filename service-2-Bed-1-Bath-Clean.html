@@ -1,13 +1,17 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Residential Cleaning in  Austin,  TX 78701 | ACE Cleaning Express |  Service | service-2-Bed-1-Bath-Clean </title>
+        <title>Residential Cleaning in Fort Worth, TX | ACE Cleaning Express |  Service | 2 Bed 1 Bath Clean</title>
+        <meta name="description" content="Our team provides a thorough and expert cleaning of your 2-bedroom, 1-bathroom apartment.">
         <!-- <title>ProPhone Templates</title> -->
         <!-- TailwindCSS  -->
         <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
@@ -18,7 +22,7 @@
            
 
         
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -34,7 +38,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -58,7 +62,7 @@
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
         </style>
-                <script type="text/javascript">
+                <script type="text/javascript" defer>
                     function send_sms(slug){
                         console.log('send_sms', slug)
                         // var sender_fname = $(`#${form_num}-first-name`).val()
@@ -92,8 +96,7 @@
                         var sender_services = ""
         
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
+
                         fetch('https://prophone.herokuapp.com/sms/' + slug , {
                             method: 'POST',
                             body: JSON.stringify({
@@ -1482,7 +1485,7 @@
                 <!-- Your map here -->
                 <div class="w-full h-full bg-gray-400">
                     <div style="height:500px; width:100%;" id="map"></div>
-                    <script >
+                    <script defer>
                         async function coordinate(url) {
                             const res = await fetch(url)
                             const coordinates = await res.json()
@@ -1540,6 +1543,7 @@
                     </script>
                     <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+                    defer
                     async
                   ></script> 
               
@@ -1634,7 +1638,7 @@
               <div class="flex space-x-6">
                   <!-- are these conditional? and linked to corret links? -->
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Facebook</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path
@@ -1707,6 +1711,13 @@
                           
                           
                           
+                          <li>
+                              <a
+                                  href='sitemap.xml'
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Sitemap</a
+                              >
+                          </li>
                       </ul>
                   </div>
                   <!-- Services Links -->
@@ -1823,7 +1834,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sun: 0:00am - 0:00am</a
+                                  >Sun: 8:00am - 6:00pm</a
                               >
                           </li>
                           
@@ -1871,7 +1882,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sat: 0:00am - 0:00am</a
+                                  >Sat: 8:00am - 6:00pm</a
                               >
                           </li>
                           
@@ -2052,102 +2063,102 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142661"
-                                            name="142661"
+                                            id="contact-service-152961"
+                                            name="152961"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142661" class="ml-3 text-sm font-medium text-gray-700">Commercial Cleaning Services</label>
+                                        <label for="contact-label-service-152961" class="ml-3 text-sm font-medium text-gray-700">Commercial Cleaning Services</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142662"
-                                            name="142662"
+                                            id="contact-service-152962"
+                                            name="152962"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142662" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Clean</label>
+                                        <label for="contact-label-service-152962" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142663"
-                                            name="142663"
+                                            id="contact-service-152963"
+                                            name="152963"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142663" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Deep Clean</label>
+                                        <label for="contact-label-service-152963" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Deep Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142664"
-                                            name="142664"
+                                            id="contact-service-152964"
+                                            name="152964"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142664" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Move In / Move Out Clean</label>
+                                        <label for="contact-label-service-152964" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Move In / Move Out Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142665"
-                                            name="142665"
+                                            id="contact-service-152965"
+                                            name="152965"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142665" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Clean</label>
+                                        <label for="contact-label-service-152965" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142666"
-                                            name="142666"
+                                            id="contact-service-152966"
+                                            name="152966"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142666" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Deep Clean</label>
+                                        <label for="contact-label-service-152966" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Deep Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142667"
-                                            name="142667"
+                                            id="contact-service-152967"
+                                            name="152967"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142667" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Move In / Move Out Clean</label>
+                                        <label for="contact-label-service-152967" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Move In / Move Out Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142668"
-                                            name="142668"
+                                            id="contact-service-152968"
+                                            name="152968"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142668" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Clean</label>
+                                        <label for="contact-label-service-152968" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142669"
-                                            name="142669"
+                                            id="contact-service-152969"
+                                            name="152969"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142669" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Deep Clean</label>
+                                        <label for="contact-label-service-152969" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Deep Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142670"
-                                            name="142670"
+                                            id="contact-service-152970"
+                                            name="152970"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142670" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Move In / Move Out Clean</label>
+                                        <label for="contact-label-service-152970" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Move In / Move Out Clean</label>
                                     </div>
                                 
                             </div>
@@ -2309,7 +2320,7 @@
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//https://facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
