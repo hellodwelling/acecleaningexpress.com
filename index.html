@@ -1,13 +1,17 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Residential Cleaning in  Austin,  TX 78701 | ACE Cleaning Express |  Home </title>
+        <title>Residential Cleaning in Fort Worth, TX | ACE Cleaning Express |  Home</title>
+        <meta name="description" content="ACE Cleaning Express is Fort Worth&#x27;s most trusted Residential Cleaning service. We are a customer-first company and you are always a priority.">
         <!-- <title>ProPhone Templates</title> -->
         <!-- TailwindCSS  -->
         <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
@@ -18,7 +22,7 @@
            
 
         
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -34,7 +38,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -58,7 +62,7 @@
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
         </style>
-                <script type="text/javascript">
+                <script type="text/javascript" defer>
                     function send_sms(slug){
                         console.log('send_sms', slug)
                         // var sender_fname = $(`#${form_num}-first-name`).val()
@@ -92,8 +96,7 @@
                         var sender_services = ""
         
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
+
                         fetch('https://prophone.herokuapp.com/sms/' + slug , {
                             method: 'POST',
                             body: JSON.stringify({
@@ -1015,7 +1018,8 @@
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/4a491c9f-8d96-48b0-997c-241f70c1afd1.jpeg"
-                alt=""
+                loading="lazy"
+                alt="Residential Cleaning company ACE Cleaning Express in Fort Worth, TX"
             />
         </div>
         
@@ -1032,7 +1036,8 @@
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5480ae62-d926-4487-8d96-396629340591.jpeg"
-                alt="-image"
+                loading="lazy"
+                alt="Residential Cleaning company ACE Cleaning Express in Fort Worth, TX"
             />
         </div>
         
@@ -1049,7 +1054,8 @@
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/d6f37220-8cc1-49ff-a5a7-78a8856bce9c.jpeg"
-                alt="-image"
+                loading="lazy"
+                alt="Residential Cleaning company ACE Cleaning Express in Fort Worth, TX"
             />
         </div>
         
@@ -1101,21 +1107,6 @@
             
             <!-- Single Logo -->
             
-            <div class="flex items-center px-4 m-4 space-x-3 font-medium text-primary">
-                <!-- <svg aria-hidden="true" class="flex-shrink-0 w-12 h-12" fill="none">
-                    <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12 21.6v-4.8c0-6.627 5.373-12 12-12s12 5.373 12 12v4.8a4.8 4.8 0 0 1 4.8 4.8v12a4.8 4.8 0 0 1-4.8 4.8H12a4.8 4.8 0 0 1-4.8-4.8v-12a4.8 4.8 0 0 1 4.8-4.8Zm19.2-4.8v4.8H16.8v-4.8a7.2 7.2 0 1 1 14.4 0Z"
-                        fill="currentColor"
-                    />
-                </svg> -->
-                <svg  aria-hidden="true" class="flex-shrink-0 w-12 h-12" fill="none" width="34" height="44" viewBox="0 0 34 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" fill="currentColor" clip-rule="evenodd" d="M20.1215 0.511044C21.1206 0.825973 21.8 1.75249 21.8 2.80002V14.8L31.4 14.8C32.2949 14.8 33.1154 15.2979 33.5287 16.0917C33.942 16.8854 33.8793 17.8432 33.3661 18.5763L16.5661 42.5763C15.9654 43.4345 14.8775 43.8039 13.8784 43.489C12.8794 43.1741 12.2 42.2475 12.2 41.2L12.2 29.2H2.59996C1.70506 29.2 0.884484 28.7021 0.471209 27.9084C0.0579347 27.1146 0.120609 26.1568 0.633802 25.4237L17.4338 1.42371C18.0345 0.565537 19.1224 0.196116 20.1215 0.511044Z"/>
-                </svg>
-                <span class="text-xl">Emergency Services</span>
-            </div>
-            
             <!-- Single Logo -->
             
             <div class="flex items-center px-4 m-4 space-x-3 font-medium text-primary">
@@ -1155,7 +1146,8 @@
                               
                                   
                                       <img 
-                                        src="https://landing-page-app-hero-images.s3.amazonaws.com/media/707eb438-5406-409a-9075-e05f6fc50c28.jpeg"   alt="About Us Image"  
+                                        src="https://landing-page-app-hero-images.s3.amazonaws.com/media/707eb438-5406-409a-9075-e05f6fc50c28.jpeg"
+                                        alt="ACE Cleaning Express team in Fort Worth, TX - people or person"
                                         class="w-auto h-auto max-h-full max-w-full"
                                         loading="lazy"
                                       >
@@ -1190,7 +1182,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                               <a
                                 target="_blank" rel="noopener noreferrer"   
                                   class="inline-flex items-center justify-center p-1 rounded-full  group focus:outline-none focus:ring-2 ring-white ring-offset-2 ring-offset-primary"
-                                  href="//facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr"
+                                  href="https://facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr"
                               >
                                   <!-- Screen Reader Fallback -->
                                   <span class="sr-only">Facebook</span>
@@ -1350,7 +1342,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1405,7 +1397,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1460,7 +1452,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1515,7 +1507,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1570,7 +1562,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1625,7 +1617,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1680,7 +1672,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1735,7 +1727,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1790,7 +1782,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1845,7 +1837,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -2093,7 +2085,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1dc83283-8c82-4b2a-a525-838db2f13c7b.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1dc83283-8c82-4b2a-a525-838db2f13c7b.png" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1dc83283-8c82-4b2a-a525-838db2f13c7b.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1dc83283-8c82-4b2a-a525-838db2f13c7b.png" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/1dc83283-8c82-4b2a-a525-838db2f13c7b.png" alt="" /> -->
                             
@@ -2112,11 +2104,11 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="" /> -->
                             
                         </div>
 
@@ -2135,7 +2127,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2aad3e16-b5d1-42d6-890b-9a53dd24c2cd.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2aad3e16-b5d1-42d6-890b-9a53dd24c2cd.png" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2aad3e16-b5d1-42d6-890b-9a53dd24c2cd.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2aad3e16-b5d1-42d6-890b-9a53dd24c2cd.png" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/2aad3e16-b5d1-42d6-890b-9a53dd24c2cd.png" alt="" /> -->
                             
@@ -2154,11 +2146,11 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="" /> -->
                             
                         </div>
 
@@ -2175,11 +2167,11 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="" /> -->
                             
                         </div>
 
@@ -2196,11 +2188,11 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="" /> -->
                             
                         </div>
 
@@ -2219,7 +2211,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9beb1172-8bce-4b1e-b63f-7c0d1c0ad12b.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9beb1172-8bce-4b1e-b63f-7c0d1c0ad12b.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9beb1172-8bce-4b1e-b63f-7c0d1c0ad12b.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9beb1172-8bce-4b1e-b63f-7c0d1c0ad12b.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/9beb1172-8bce-4b1e-b63f-7c0d1c0ad12b.jpeg" alt="" /> -->
                             
@@ -2240,7 +2232,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/16c1244b-2a84-41a7-8432-953f94b855ed.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/16c1244b-2a84-41a7-8432-953f94b855ed.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/16c1244b-2a84-41a7-8432-953f94b855ed.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/16c1244b-2a84-41a7-8432-953f94b855ed.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/16c1244b-2a84-41a7-8432-953f94b855ed.jpeg" alt="" /> -->
                             
@@ -2261,7 +2253,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/aea07176-f64a-4407-a70d-e9cc8db9ae65.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/aea07176-f64a-4407-a70d-e9cc8db9ae65.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/aea07176-f64a-4407-a70d-e9cc8db9ae65.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/aea07176-f64a-4407-a70d-e9cc8db9ae65.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/aea07176-f64a-4407-a70d-e9cc8db9ae65.jpeg" alt="" /> -->
                             
@@ -2282,7 +2274,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/02ba45e1-23e8-467b-a122-360b217e1f82.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/02ba45e1-23e8-467b-a122-360b217e1f82.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/02ba45e1-23e8-467b-a122-360b217e1f82.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/02ba45e1-23e8-467b-a122-360b217e1f82.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/02ba45e1-23e8-467b-a122-360b217e1f82.jpeg" alt="" /> -->
                             
@@ -2303,7 +2295,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f257eaa7-cf22-43fb-a6c8-e90e8b3d371f.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f257eaa7-cf22-43fb-a6c8-e90e8b3d371f.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f257eaa7-cf22-43fb-a6c8-e90e8b3d371f.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f257eaa7-cf22-43fb-a6c8-e90e8b3d371f.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/f257eaa7-cf22-43fb-a6c8-e90e8b3d371f.jpeg" alt="" /> -->
                             
@@ -2324,7 +2316,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3f683928-c5c8-4190-9438-f36402664471.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3f683928-c5c8-4190-9438-f36402664471.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3f683928-c5c8-4190-9438-f36402664471.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3f683928-c5c8-4190-9438-f36402664471.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/3f683928-c5c8-4190-9438-f36402664471.jpeg" alt="" /> -->
                             
@@ -2345,7 +2337,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b95cb955-ddd4-4be2-b413-1ee03aa8ec9a.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b95cb955-ddd4-4be2-b413-1ee03aa8ec9a.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b95cb955-ddd4-4be2-b413-1ee03aa8ec9a.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b95cb955-ddd4-4be2-b413-1ee03aa8ec9a.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b95cb955-ddd4-4be2-b413-1ee03aa8ec9a.jpeg" alt="" /> -->
                             
@@ -2366,7 +2358,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f1a2da03-e29c-4ed8-a8fb-c8be1935ace3.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f1a2da03-e29c-4ed8-a8fb-c8be1935ace3.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/f1a2da03-e29c-4ed8-a8fb-c8be1935ace3.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f1a2da03-e29c-4ed8-a8fb-c8be1935ace3.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/f1a2da03-e29c-4ed8-a8fb-c8be1935ace3.jpeg" alt="" /> -->
                             
@@ -2387,7 +2379,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d6f37220-8cc1-49ff-a5a7-78a8856bce9c.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d6f37220-8cc1-49ff-a5a7-78a8856bce9c.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d6f37220-8cc1-49ff-a5a7-78a8856bce9c.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d6f37220-8cc1-49ff-a5a7-78a8856bce9c.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d6f37220-8cc1-49ff-a5a7-78a8856bce9c.jpeg" alt="" /> -->
                             
@@ -2408,7 +2400,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a18bae84-398d-42c0-b24a-3197474d6084.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a18bae84-398d-42c0-b24a-3197474d6084.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a18bae84-398d-42c0-b24a-3197474d6084.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a18bae84-398d-42c0-b24a-3197474d6084.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/a18bae84-398d-42c0-b24a-3197474d6084.jpeg" alt="" /> -->
                             
@@ -2473,7 +2465,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1dc83283-8c82-4b2a-a525-838db2f13c7b.png" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1dc83283-8c82-4b2a-a525-838db2f13c7b.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2481,7 +2473,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2489,7 +2481,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2aad3e16-b5d1-42d6-890b-9a53dd24c2cd.png" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2aad3e16-b5d1-42d6-890b-9a53dd24c2cd.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2497,7 +2489,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1fdb40d5-670a-42d3-9720-240f497c3db1.png" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c2e3c784-2040-434e-932a-238eea8df6dc.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2505,7 +2497,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2513,7 +2505,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d0ad15c-1bb1-4179-910f-1156d147e55f.png" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b3adb92a-639f-41aa-9c35-2deb6ab4e390.png" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2521,7 +2513,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9beb1172-8bce-4b1e-b63f-7c0d1c0ad12b.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9beb1172-8bce-4b1e-b63f-7c0d1c0ad12b.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2529,7 +2521,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/16c1244b-2a84-41a7-8432-953f94b855ed.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/16c1244b-2a84-41a7-8432-953f94b855ed.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2537,7 +2529,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 8">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/aea07176-f64a-4407-a70d-e9cc8db9ae65.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/aea07176-f64a-4407-a70d-e9cc8db9ae65.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2545,7 +2537,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/02ba45e1-23e8-467b-a122-360b217e1f82.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/02ba45e1-23e8-467b-a122-360b217e1f82.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2553,7 +2545,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 10">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f257eaa7-cf22-43fb-a6c8-e90e8b3d371f.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f257eaa7-cf22-43fb-a6c8-e90e8b3d371f.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2561,7 +2553,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 11">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3f683928-c5c8-4190-9438-f36402664471.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3f683928-c5c8-4190-9438-f36402664471.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2569,7 +2561,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 12">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b95cb955-ddd4-4be2-b413-1ee03aa8ec9a.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b95cb955-ddd4-4be2-b413-1ee03aa8ec9a.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2577,7 +2569,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 13">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f1a2da03-e29c-4ed8-a8fb-c8be1935ace3.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/f1a2da03-e29c-4ed8-a8fb-c8be1935ace3.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2585,7 +2577,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 14">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d6f37220-8cc1-49ff-a5a7-78a8856bce9c.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d6f37220-8cc1-49ff-a5a7-78a8856bce9c.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2593,7 +2585,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 15">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a18bae84-398d-42c0-b24a-3197474d6084.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a18bae84-398d-42c0-b24a-3197474d6084.jpeg" alt="Commercial Cleaning Services for ACE Cleaning Express in Fort Worth, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2958,7 +2950,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="39031"
+                                aria-controls="43062"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -2978,7 +2970,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="39031">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="43062">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at +1 817-262-2667. Thanks!</p>
                         </dd>
@@ -2991,7 +2983,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="39032"
+                                aria-controls="43063"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -3011,7 +3003,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="39032">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="43063">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -3024,7 +3016,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="39033"
+                                aria-controls="43064"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -3044,7 +3036,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="39033">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="43064">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3113,7 +3105,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                 <!-- Your map here -->
                 <div class="w-full h-full bg-gray-400">
                     <div style="height:500px; width:100%;" id="map"></div>
-                    <script >
+                    <script defer>
                         async function coordinate(url) {
                             const res = await fetch(url)
                             const coordinates = await res.json()
@@ -3171,6 +3163,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                     </script>
                     <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+                    defer
                     async
                   ></script> 
               
@@ -3252,7 +3245,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
               <div class="flex space-x-6">
                   <!-- are these conditional? and linked to corret links? -->
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Facebook</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path
@@ -3325,6 +3318,13 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                           
                           
                           
+                          <li>
+                              <a
+                                  href='sitemap.xml'
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Sitemap</a
+                              >
+                          </li>
                       </ul>
                   </div>
                   <!-- Services Links -->
@@ -3441,7 +3441,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sun: 0:00am - 0:00am</a
+                                  >Sun: 8:00am - 6:00pm</a
                               >
                           </li>
                           
@@ -3489,7 +3489,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sat: 0:00am - 0:00am</a
+                                  >Sat: 8:00am - 6:00pm</a
                               >
                           </li>
                           
@@ -3670,102 +3670,102 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142661"
-                                            name="142661"
+                                            id="contact-service-152961"
+                                            name="152961"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142661" class="ml-3 text-sm font-medium text-gray-700">Commercial Cleaning Services</label>
+                                        <label for="contact-label-service-152961" class="ml-3 text-sm font-medium text-gray-700">Commercial Cleaning Services</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142662"
-                                            name="142662"
+                                            id="contact-service-152962"
+                                            name="152962"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142662" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Clean</label>
+                                        <label for="contact-label-service-152962" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142663"
-                                            name="142663"
+                                            id="contact-service-152963"
+                                            name="152963"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142663" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Deep Clean</label>
+                                        <label for="contact-label-service-152963" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Deep Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142664"
-                                            name="142664"
+                                            id="contact-service-152964"
+                                            name="152964"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142664" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Move In / Move Out Clean</label>
+                                        <label for="contact-label-service-152964" class="ml-3 text-sm font-medium text-gray-700">1 Bed 1 Bath Move In / Move Out Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142665"
-                                            name="142665"
+                                            id="contact-service-152965"
+                                            name="152965"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142665" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Clean</label>
+                                        <label for="contact-label-service-152965" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142666"
-                                            name="142666"
+                                            id="contact-service-152966"
+                                            name="152966"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142666" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Deep Clean</label>
+                                        <label for="contact-label-service-152966" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Deep Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142667"
-                                            name="142667"
+                                            id="contact-service-152967"
+                                            name="152967"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142667" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Move In / Move Out Clean</label>
+                                        <label for="contact-label-service-152967" class="ml-3 text-sm font-medium text-gray-700">2 Bed 1 Bath Move In / Move Out Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142668"
-                                            name="142668"
+                                            id="contact-service-152968"
+                                            name="152968"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142668" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Clean</label>
+                                        <label for="contact-label-service-152968" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142669"
-                                            name="142669"
+                                            id="contact-service-152969"
+                                            name="152969"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142669" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Deep Clean</label>
+                                        <label for="contact-label-service-152969" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Deep Clean</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-142670"
-                                            name="142670"
+                                            id="contact-service-152970"
+                                            name="152970"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-142670" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Move In / Move Out Clean</label>
+                                        <label for="contact-label-service-152970" class="ml-3 text-sm font-medium text-gray-700">2 Bed 2 Bath Move In / Move Out Clean</label>
                                     </div>
                                 
                             </div>
@@ -3927,7 +3927,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//https://facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/acecleaningexpress1?_rdc=1&amp;_rdr/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
